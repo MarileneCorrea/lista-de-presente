@@ -1,0 +1,87 @@
+* {
+    font-family: "Poppins";
+}
+
+body {
+    background: rgb(225, 183, 255);
+    background: linear-gradient(90deg, rgba(225, 183, 255, 1) 0%, rgba(247, 205, 255, 1) 66%, rgba(255, 211, 252, 1) 100%, rgba(208, 208, 208, 1) 100%);
+    color: #383838;
+}
+
+#content {
+    background: rgba(255, 255, 255, 0.49);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 5%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 200px;
+    margin: 2%;
+}
+
+button {
+    padding: 0.5rem 1 rem;
+    border-radius: 32px;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    color: #fff;
+    border-color: #fff;
+    color:#383838
+
+}
+
+button:hover {
+    color: #f0094a;
+    background: transparent;
+     box-shadow:none;
+  }
+  .button:before,
+  .button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #f0094a;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .button:before,
+  .button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+  h3 {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
